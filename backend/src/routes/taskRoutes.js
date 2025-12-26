@@ -4,6 +4,7 @@ const taskController = require('../controllers/taskController');
 const { protect } = require('../middleware/authMiddleware');
 
 // All routes here are protected
+
 router.use(protect);
 
 router.post('/', taskController.createTask);
