@@ -3,7 +3,7 @@ const Tenant = require('./tenant');
 const User = require('./user');
 const Project = require('./project');
 const Task = require('./task');
-const AuditLog = require('./auditLog');
+const AuditLog = require('./auditLog');   
 
 // --- Relationships ---
 
