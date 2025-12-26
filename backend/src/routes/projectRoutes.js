@@ -4,6 +4,7 @@ const projectController = require('../controllers/projectController');
 const { protect } = require('../middleware/authMiddleware');
 
 
+
 router.use(protect);
 
 router.post('/', projectController.createProject);
