@@ -96,7 +96,7 @@ The system follows a **Three-Tier Architecture**:
 
 **1. Clone the Repository**
 ```bash
-git clone [https://github.com/sunil-polupalli/saas-platform.git](https://github.com/sunil-polupalli/saas-platform.git)
+git clone [https://github.com/sivanandu-03/multi-tenant-saas-platform](https://github.com/sivanandu-03/multi-tenant-saas-platform)
 cd saas-platform
 
 ```
@@ -191,7 +191,7 @@ The system automatically seeds these accounts on startup. You can use them to te
 ## 📂 Project Structure
 
 ```bash
-saas-platform/
+multi-tenant-saas-platform/
 ├── backend/                # Express.js Backend
 │   ├── src/
 │   │   ├── config/         # DB Connection
