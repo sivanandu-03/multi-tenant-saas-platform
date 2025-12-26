@@ -7,6 +7,7 @@ const seed = async () => {
   try {
     console.log('Starting Database Seeding...');
 
+    
     // 1. Create Tenant (Matches submission.json "Demo Company")
     const [tenant] = await Tenant.findOrCreate({
       where: { subdomain: 'demo' },
