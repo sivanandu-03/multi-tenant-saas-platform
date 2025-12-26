@@ -5,7 +5,7 @@ const Project = require('./project');
 const Task = require('./task');
 const AuditLog = require('./auditLog');   
 
-// --- Relationships ---
+
 Tenant.hasMany(User, { foreignKey: 'tenantId', as: 'users' });
 Tenant.hasMany(Project, { foreignKey: 'tenantId', as: 'projects' });
 Tenant.hasMany(Task, { foreignKey: 'tenantId', as: 'tasks' });
