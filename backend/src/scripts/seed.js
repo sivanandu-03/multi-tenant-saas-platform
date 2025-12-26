@@ -16,7 +16,8 @@ const seed = async () => {
         status: 'active'
       }
     });
-    
+
+
     console.log('✅ Tenant Created:', tenant.name);
 
     // 2. Create Super Admin (Matches submission.json)
