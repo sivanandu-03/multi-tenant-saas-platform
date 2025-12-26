@@ -3,7 +3,7 @@ const sequelize = require('../config/database');
 
 const Task = sequelize.define('Task', {
   id: {
-    type: DataTypes.UUID,
+    type: DataTypes.UUID, 
     defaultValue: DataTypes.UUIDV4,
     primaryKey: true
   },
