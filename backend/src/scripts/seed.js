@@ -32,10 +32,8 @@ const seed = async () => {
         tenantId: null 
       }
     });
-
     console.log('✅ Super Admin Created');
 
-    
     // 3. Create Tenant Admin (Matches submission.json)
     const adminPass = await bcrypt.hash('Demo@123', salt);
     const [tenantAdmin] = await User.findOrCreate({
