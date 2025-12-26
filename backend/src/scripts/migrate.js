@@ -7,11 +7,10 @@ const migrate = async () => {
   try {
     console.log('🔄 Starting Database Migration (SQL Mode)...');
 
-    // 1. Authenticate
     await sequelize.authenticate();
     console.log('✅ Database Connection Established.');
 
-    // 2. Read Migration Files
+  
     const migrationsDir = path.join(__dirname, '../../migrations');
     
     if (!fs.existsSync(migrationsDir)) {
