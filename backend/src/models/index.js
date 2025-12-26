@@ -11,7 +11,7 @@ Tenant.hasMany(Project, { foreignKey: 'tenantId', as: 'projects' });
 Tenant.hasMany(Task, { foreignKey: 'tenantId', as: 'tasks' });
 Tenant.hasMany(AuditLog, { foreignKey: 'tenantId', as: 'auditLogs' });
 
-// User relationships
+
 User.belongsTo(Tenant, { foreignKey: 'tenantId', as: 'tenant' });
 
 User.hasMany(Project, { foreignKey: 'createdById', as: 'createdProjects' });
