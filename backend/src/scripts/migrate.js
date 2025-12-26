@@ -9,7 +9,6 @@ const migrate = async () => {
 
     await sequelize.authenticate();
     console.log('✅ Database Connection Established.');
-
   
     const migrationsDir = path.join(__dirname, '../../migrations');
     
