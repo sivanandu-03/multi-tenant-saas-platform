@@ -4,6 +4,7 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 require('dotenv').config();
 
+
 // Import Database Config for Health Check
 const sequelize = require('./config/database');
 
