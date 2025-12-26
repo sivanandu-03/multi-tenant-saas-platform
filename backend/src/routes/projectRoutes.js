@@ -3,7 +3,7 @@ const router = express.Router();
 const projectController = require('../controllers/projectController');
 const { protect } = require('../middleware/authMiddleware');
 
-// Protect all routes
+
 router.use(protect);
 
 router.post('/', projectController.createProject);
